@@ -1,7 +1,12 @@
 function Home() {
   return (
-    <div className="font-bold text-2xl text-violet-700">
-      The beginig to master next js seriosely
+    <div>
+      <h1 className="h1-bold font-inter">
+        The beginning to master next js seriously
+      </h1>
+      <h1 className="h1-bold font-serif">
+        The beginning to master next js seriously
+      </h1>
     </div>
   );
 }
