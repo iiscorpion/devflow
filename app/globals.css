@@ -1,12 +1,8 @@
 @import "tailwindcss";
+
+/* Plugins - placed at end for IntelliSense compatibility */
 @import "tw-animate-css";
-
 @plugin "@tailwindcss/typography";
-
-/*
-  ---break---
-*/
-
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
