@@ -6,7 +6,7 @@ import "./globals.css";
 import ThemeProvider from "@/context/Theme";
 import { Toaster } from "@/components/ui/sonner";
 import { auth } from "@/auth";
-import { Session } from "inspector/promises";
+
 import { SessionProvider } from "next-auth/react";
 
 const inter = localFont({
@@ -38,6 +38,13 @@ export default async function RootLayout({
   const session = await auth();
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </head>
       <SessionProvider session={session}>
         <body
           className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
